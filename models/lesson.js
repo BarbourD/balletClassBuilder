@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
-const combosSchema = new Schema({
+const classesSchema = new Schema({
     lesson: String,
     date: String,
     album: String,
@@ -16,4 +16,4 @@ const combosSchema = new Schema({
 
 
 
-module.exports = mongoose.model('Combo', combosSchema)
+module.exports = mongoose.model('Classes', classesSchema)

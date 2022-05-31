@@ -4,9 +4,10 @@
 <body>
     <%- include('../partials/header.ejs') %>
     
-    <form action="/combos" method="POST">
-        <input type="text" name="lesson" value="Class Name" />
-        <input type="date" name="date" />
+    <form action="/lessons" method="POST">
+        <input type="text" name="track" placeholder="Song number and Title" /><br />
+        <input type="text" name="combo" placeholder="Combination Name ie Plié"/><br />
+        <textarea name="description" cols="50" rows="20" placeholder="1st position: 2 demi plié, 1 grand plié, port de bras en avant and en erierre, repeat 2nd, 4th, and 5th"></textarea> <br />
         <!-- <input list="combos" name="combos">  -->
         <!-- <datalist id="combos">
             <option value="Plié">
@@ -15,7 +16,8 @@
             <option value="Dégagé">
             <option value="Rond De Jamb">
             </datalist> -->
-        <input type="submit" value="Create Class">
+        <input type="submit" value="Create Combination">
     </form>
+    
 </body>
 </html>

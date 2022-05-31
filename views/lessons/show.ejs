@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head.ejs') %>
+  </head>
+  
+  <body>
+    <%- include('../partials/header.ejs')%>
+    
+    <h2><%=lesson.combo%></h2>
+    <h3>Song Number and Title:<h3></h3>
+    <p><%=lesson.track%></p>
+    <h3>Combination:</h3>
+    <p><%=lesson.description%></p>
+    
+    <button onClick='location=href="/lessons/<%=lesson._id%>/edit"' type="button">Edit Combination</button>
+   
+    <button onClick="location=href='./'" type="button">Back</button> 
+    <form action="/lessons/<%=lesson._id%>?_method=DELETE" method="POST">
+    <input type="submit" value="Delete" />
+    </form>
+</body>
+</html>

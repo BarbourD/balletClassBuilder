@@ -3,9 +3,10 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const combosController = require('./controllers/combos.js');
 const methodOverride = require('method-override');
-const router = require('./controllers/combos.js');
+const lessonsController = require('./controllers/lessons.js');
+// const combosController = require('./controllers/combos.js');
+// const router = require('./controllers/classes.js');
 const PORT = 3000
 
 
@@ -23,12 +24,12 @@ db.on('disconnected', () => console.log('mongo is disconnected'));
 app.use(express.static('public'))
 app.use(methodOverride('_method'));
 app.use(express.urlencoded({extended: false}));
-app.use('/combos', combosController);
+// app.use('/combos', combosController);
+app.use('/lessons', lessonsController);
 
 
 app.get('/', (req, res) => {
     res.render('index.ejs');
-   
 })
 
 // maker
