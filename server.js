@@ -31,7 +31,10 @@ app.get('/', (req, res) => {
    
 })
 
-
+// maker
+// app.get('/maker', (req, res) => {
+//     res.render('maker.ejs');
+// }); 
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`)

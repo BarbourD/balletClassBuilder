@@ -2,10 +2,12 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const combosSchema = new Schema({
-    class: String,
+    lesson: String,
     date: String,
-
-
+    album: String,
+    track: String,
+    combo: String,
+    description: String,
 })
 
 

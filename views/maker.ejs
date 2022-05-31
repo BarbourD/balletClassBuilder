@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
- <%- include('../partials/head.ejs') %>
+ <%- include('./partials/head.ejs') %>
 <body>
-    <%- include('../partials/header.ejs') %>
+    <%- include('./partials/header.ejs') %>
     
-    <form action="/combos" method="POST">
-        <input type="text" name="lesson" value="Class Name" />
-        <input type="date" name="date" />
+    <form action="/index" method="POST">
+        <input type="text" name="class" value="Class Name">
         <!-- <input list="combos" name="combos">  -->
         <!-- <datalist id="combos">
             <option value="Plié">
