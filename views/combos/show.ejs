@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <%- inlcude('./partials/head.ejs') %>
+ <%- include('../partials/head.ejs') %>
 </head>
 
 <body>
-    <form action="/views/index.ejs" method="POST">
-        <input type="text" name="class">
-    </form>
+    <%- include('../partials/header.ejs')%>
+     <h1>Hello Show</h1>
+   
     
 </body>
 </html>
