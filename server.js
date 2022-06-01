@@ -7,7 +7,7 @@ const methodOverride = require('method-override');
 const lessonsController = require('./controllers/lessons.js');
 // const combosController = require('./controllers/combos.js');
 // const router = require('./controllers/classes.js');
-const PORT = 3000
+const PORT = process.env.PORT || 3000;
 
 
 //DATABASE CONFIG
