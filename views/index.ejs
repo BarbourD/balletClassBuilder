@@ -3,12 +3,14 @@
    <head> 
        <%- include('./partials/head.ejs') %>
     </head>
-<body>
+<body class="indexBody">
+    <nav id="indexHeader">
     <%- include('./partials/header.ejs')%>
-
-    <button onClick="location=href='/lessons/new'" type="button">Make A New Combination</button>
-    <button onClick="location=href='/lessons/'" type="button">Find a Combination
-    </button>
+    </nav>
+    <nav id="indexButtons">
+        <button id="indexButton" onClick="location=href='/lessons/new'" type="button">Make A New Combination</button>
+        <button id="indexButton" onClick="location=href='/lessons/'" type="button">Find a Combination</button>
+    </nav>
 </body>
 
 </htm>

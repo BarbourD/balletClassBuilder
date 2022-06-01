@@ -4,10 +4,14 @@
 
  <body>
     <%- include('../partials/header.ejs')%>
-    <h2> Combinations</h2>
-
     <div>
-        <% for(let i = 0; i < lessons.length; i++) { %>
+    <button onClick='location=href="./new"' type=""button>New Combination</button>
+    <button onClick="location=href='../'" type="button">Back</button>
+</div>
+<h2> Combinations</h2> 
+    
+    <div id="formDiv">
+         <% for(let i = 0; i < lessons.length; i++) { %>
             <a href="/lessons/<%=lessons[i]._id%>"><%= lessons[i].combo, lessons[i].combo, lessons[i].discription %></a> 
             <br />
              <!-- <%= //lessons[i].track %><br />
@@ -15,7 +19,6 @@
              <%= //lessons[i].discription %><br /> -->
         <% } %>
     </div> 
-    <button onClick='location=href="./new"' type=""button>New Combination</button>
-    <button onClick="location=href='../'" type="button">Back</button>
+
 </body>
 </html>

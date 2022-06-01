@@ -1,3 +1,123 @@
-body {
-    background-color: aqua;
+.indexBody {
+    background-image: url('https://i.imgur.com/Zq2xDF6.jpg?2');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
 }
+
+body {
+    background-image: url('https://i.imgur.com/irJS8Mf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+.headerTitle {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+}
+
+header {
+    color:floralwhite;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    background-color: black;
+    opacity: .6;
+}
+ #link{
+     color:floralwhite;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+ }
+ 
+ #indexButtons {
+    border-radius: 10px;
+    margin: 200px auto 0px 517px;
+    padding: 1px 1px 1px 1px;
+ }
+
+ img {
+     width: 200px;
+     height: 200px;
+ }
+
+ textarea {
+     opacity: .3;
+ }
+  .input {
+      opacity: .3;
+  }
+
+  main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;  
+      margin: 100px 0px 0px 0px; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #subButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+  }
+
+  button {
+      width: 130px;
+  }
+
+  #indexButton {
+      width: 170px;
+  }
+
+  div {
+      display: flex;
+     
+      justify-content: center;
+      margin: 20px;
+      color: floralwhite;
+  }
+
+  #formDiv {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    color: floralwhite;
+  }
+  
+  p {
+      width: 300px;
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      color: floralwhite;
+      opacity: .7;
+  }
+  h2, h3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: floralwhite;
+    opacity: .7;
+  }
+  a {
+      color: floralwhite;
+      opacity: .7;
+  }
+
+  span {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 10px;
+  }
