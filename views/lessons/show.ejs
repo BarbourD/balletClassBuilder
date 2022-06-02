@@ -7,19 +7,32 @@
   <body>
     <%- include('../partials/header.ejs')%>
     <span>
-      <h2><%=lesson.combo%></h2>
-      <h3>Song Number and Title:</h3>
-      <p><%=lesson.track%></p>
-      <h3>Combination:</h3>
+      <!-- <div class="combos"> -->
+      <h2>Combination</h2>
+      <h3><%=lesson.combo%></h3>
+    <!-- </div> -->
+    <!-- <div class="albums"> -->
+      <h2>Album Title</h2>
+      <h3><%=lesson.album%></h3>
+    <!-- </div> -->
+       <!-- <div class="songStep"> -->
+       <div id="songs">
+        <h4>Song Number and Title:</h4>
+        <p><%=lesson.track%></p>
+      </div>
+    <div id="steps">
+      <h4>Combination:</h4>
       <p><%=lesson.description%></p>
+    <!-- <!-- </div> -->
+    </div> 
     </span>
     <div>
-    <button onClick='location=href="/lessons/<%=lesson._id%>/edit"' type="button">Edit Combination</button>
+    <button class="editB" onClick='location=href="/lessons/<%=lesson._id%>/edit"' type="button"></button>
    
-    <button onClick="location=href='./'" type="button">Back</button> 
+    <button class="backB" onClick="location=href='./'" type="button"></button> 
   </div>
     <form action="/lessons/<%=lesson._id%>?_method=DELETE" method="POST">
-    <input type="submit" value="Delete" />
+    <input class="dButton" type="submit" value=" "/>
     </form>
 </body>
 </html>

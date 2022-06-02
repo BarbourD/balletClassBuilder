@@ -8,8 +8,9 @@
     <form action="/lessons/<%= lesson._id %>?_method=PUT" method="POST">
         <input class="input" type="text" name="track" value="<%=lesson.track%>" placeholder="Song number and Title" /><br />
         <input class="input" type="text" name="combo" value="<%=lesson.combo%>" placeholder="Combination Name ie Plié"/><br />
+        <input class="input" type="text" name="album" placeholder="Album Name"/><br />
         <textarea name="description" cols="50" rows="20" placeholder="1st position: 2 demi plié, 1 grand plié, port de bras en avant and en erierre, repeat 2nd, 4th, and 5th"><%=lesson.description%></textarea> <br />
-        <input type="submit" value="Update Combination">
+        <input class="editB" type="submit" value="">
     </form>
 </main>
 </body>

@@ -2,6 +2,7 @@
     background-image: url('https://i.imgur.com/Zq2xDF6.jpg?2');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
 }
 
@@ -9,7 +10,9 @@ body {
     background-image: url('https://i.imgur.com/irJS8Mf.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
+  
 }
 
 .headerTitle {
@@ -32,10 +35,15 @@ header {
     align-content: center;
  }
  
- #indexButtons {
+ .indexButtons {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: right;
+    justify-items: center;
     border-radius: 10px;
     margin: 200px auto 0px 517px;
-    padding: 1px 1px 1px 1px;
+    padding: 100px;
+    position: absolute; left: 80px; top: 100px;
  }
 
  img {
@@ -75,9 +83,10 @@ header {
       width: 130px;
   }
 
-  #indexButton {
+  /* #indexButton {
       width: 170px;
-  }
+      margin: 10px;
+  } */
 
   div {
       display: flex;
@@ -102,13 +111,19 @@ header {
       align-content: center;
       color: floralwhite;
       opacity: .7;
+      margin: 5px 0px 0px 0px;
   }
-  h2, h3 {
+  h2, h3{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 1px;
     color: floralwhite;
     opacity: .7;
+    margin: 5px;
+  }
+  
+  h4 {
+      margin: 0;
   }
   a {
       color: floralwhite;
@@ -119,5 +134,56 @@ header {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    padding: 10px;
+  }
+
+  .dButton {
+      background-image: url('https://i.imgur.com/Mwr72Ctt.png');
+      width: 108px;
+      height: 163px;
+      background-repeat: no-repeat;
+  } 
+
+  .backB {
+    background-image: url('https://i.imgur.com/m5Yd59Vt.png');
+    width: 108px;
+    height: 163px;
+    background-repeat: no-repeat;
+  }
+  .newB {
+    background-image: url('https://i.imgur.com/viLJgizt.png');
+    width: 108px;
+    height: 163px;
+    background-repeat: no-repeat;
+  }
+
+  .editB {
+    background-image: url('https://i.imgur.com/ja4bQsSt.png');
+    width: 108px;
+    height: 163px;
+    background-repeat: no-repeat;
+  }
+
+  .findB {
+    background-image: url('https://i.imgur.com/BxlTrfet.png');
+    width: 108px;
+    height: 163px;
+    background-repeat: no-repeat;
+  }
+   #songs {
+    display: flex;
+    flex-flow: column wrap;
+    align-content:flex-start;
+    align-items: center;
+  } 
+   #steps {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: flex-end;
+      align-items: center;
+  } 
+
+  #headerDiv {
+      display: flex;
+      justify-content: end;
+      justify-self: flex-end;
   }

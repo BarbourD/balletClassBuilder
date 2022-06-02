@@ -7,6 +7,7 @@
     <form action="/lessons" method="POST">
         <input class="input" type="text" name="track" placeholder="Song Number and Title" /><br />
         <input class="input" type="text" name="combo" placeholder="Combination Name"/><br />
+        <input class="input" type="text" name="album" placeholder="Album Name"/><br />
         <textarea name="description" cols="50" rows="20" placeholder="1st position: 2 demi plié, 1 grand plié, port de bras en avant and en erierre, repeat 2nd, 4th, and 5th"></textarea> <br />
         <!-- <input list="combos" name="combos">  -->
         <!-- <datalist id="combos">
@@ -15,10 +16,12 @@
             <option value="Tendu From Fifth Position">
             <option value="Dégagé">
             <option value="Rond De Jamb">
-            </datalist> -->
-        <input id="subButton" type="submit" value="Create Combination">
+          </datalist> -->
+          <div class="trial">
+        <input class="newB" type="submit" value="">
+        <button class="backB"onClick="location=href='../'" type="button"></button>
+    </div>
     </form>
-        <button onClick="location=href='../'" type="button">Home</button>
 </main>
 </body>
 </html>
