@@ -12,7 +12,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
-  
 }
 
 .headerTitle {
@@ -28,6 +27,7 @@ header {
     background-color: black;
     opacity: .6;
 }
+
  #link{
      color:floralwhite;
     display: flex;
@@ -35,25 +35,20 @@ header {
     align-content: center;
  }
  
- .indexButtons {
+ #indexB1 {
     display: flex;
-    flex-flow: column wrap;
-    align-content: right;
-    justify-items: center;
-    border-radius: 10px;
-    margin: 200px auto 0px 517px;
-    padding: 100px;
-    position: absolute; left: 80px; top: 100px;
+    margin: 300px 300px 0px 517px;
  }
-
- img {
-     width: 200px;
-     height: 200px;
+ 
+ #indexB2 {
+    display: flex;
+    margin: -163px -300px 0px 600px;
  }
 
  textarea {
      opacity: .3;
  }
+
   .input {
       opacity: .3;
   }
@@ -83,14 +78,8 @@ header {
       width: 130px;
   }
 
-  /* #indexButton {
-      width: 170px;
-      margin: 10px;
-  } */
-
   div {
-      display: flex;
-     
+      display: flex; 
       justify-content: center;
       margin: 20px;
       color: floralwhite;
@@ -113,6 +102,7 @@ header {
       opacity: .7;
       margin: 5px 0px 0px 0px;
   }
+
   h2, h3{
     display: flex;
     justify-content: center;
@@ -125,6 +115,7 @@ header {
   h4 {
       margin: 0;
   }
+
   a {
       color: floralwhite;
       opacity: .7;
@@ -149,6 +140,7 @@ header {
     height: 163px;
     background-repeat: no-repeat;
   }
+
   .newB {
     background-image: url('https://i.imgur.com/viLJgizt.png');
     width: 108px;
@@ -175,6 +167,7 @@ header {
     align-content:flex-start;
     align-items: center;
   } 
+
    #steps {
       display: flex;
       flex-flow: column wrap;
@@ -186,4 +179,14 @@ header {
       display: flex;
       justify-content: end;
       justify-self: flex-end;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    opacity: .6;
+    
   }

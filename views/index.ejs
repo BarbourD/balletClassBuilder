@@ -7,10 +7,13 @@
     <nav id="indexHeader">
     <%- include('./partials/header.ejs')%>
     </nav>
-    <nav class="indexButtons">
+    <div id="indexB1">
         <button class="newB" onClick="location=href='/lessons/new'" type="button"></button>
+        </div>
+        <div id="indexB2">
         <button class="findB" onClick="location=href='/lessons/'" type="button"></button>
-    </nav>
+    </div>
+   
+    <%- include('./partials/footer.ejs')%>
 </body>
-
 </htm>

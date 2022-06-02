@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
- <%- include('../partials/head.ejs') %>
+  <%- include('../partials/head.ejs') %>
 
- <body>
-     
-     <%- include('../partials/header.ejs')%>
-     <div>
-         <button class="newB" onClick='location=href="/lessons/new"' type="button"></button>
-         <button class="backB" onClick="location=href='../'" type="button"></button>
-         
-</div>
-<h2> Combinations</h2> 
-    
+  <body>
+    <%- include('../partials/header.ejs')%>
+    <div>
+      <button
+        class="newB"
+        onClick='location=href="/lessons/new"'
+        type="button"
+      ></button>
+      <button
+        class="backB"
+        onClick="location=href='../'"
+        type="button"
+      ></button>
+    </div>
+    <h2>Combinations</h2>
+
     <div id="formDiv">
-         <% for(let i = 0; i < lessons.length; i++) { %>
-            <a href="/lessons/<%=lessons[i]._id%>"><%= lessons[i].combo, lessons[i].combo, lessons[i].discription %></a> 
-            <br />
-             <!-- <%= //lessons[i].track %><br />
+      <% for(let i = 0; i < lessons.length; i++) { %>
+      <a href="/lessons/<%=lessons[i]._id%>"
+        ><%= lessons[i].combo, lessons[i].combo, lessons[i].discription %></a
+      >
+      <br />
+      <!-- <%= //lessons[i].track %><br />
              <%= //lessons[i].combo %><br />
              <%= //lessons[i].discription %><br /> -->
-        <% } %>
-    </div> 
-
-</body>
+      <% } %>
+    </div>
+    <%- include('../partials/footer.ejs')%>
+  </body>
 </html>

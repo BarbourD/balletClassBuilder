@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <%- include('../partials/head.ejs') %>
   </head>
-  
+
   <body>
     <%- include('../partials/header.ejs')%>
     <span>
-      <!-- <div class="combos"> -->
       <h2>Combination</h2>
       <h3><%=lesson.combo%></h3>
-    <!-- </div> -->
-    <!-- <div class="albums"> -->
       <h2>Album Title</h2>
       <h3><%=lesson.album%></h3>
-    <!-- </div> -->
-       <!-- <div class="songStep"> -->
-       <div id="songs">
+      <div id="songs">
         <h4>Song Number and Title:</h4>
         <p><%=lesson.track%></p>
       </div>
-    <div id="steps">
-      <h4>Combination:</h4>
-      <p><%=lesson.description%></p>
-    <!-- <!-- </div> -->
-    </div> 
+      <div id="steps">
+        <h4>Combination:</h4>
+        <p><%=lesson.description%></p>
+      </div>
     </span>
     <div>
-    <button class="editB" onClick='location=href="/lessons/<%=lesson._id%>/edit"' type="button"></button>
-   
-    <button class="backB" onClick="location=href='./'" type="button"></button> 
-  </div>
+      <button
+        class="editB"
+        onClick='location=href="/lessons/<%=lesson._id%>/edit"'
+        type="button"
+      ></button>
+      <button class="backB" onClick="location=href='./'" type="button"></button>
+    </div>
     <form action="/lessons/<%=lesson._id%>?_method=DELETE" method="POST">
-    <input class="dButton" type="submit" value=" "/>
+      <input class="dButton" type="submit" value=" " />
     </form>
-</body>
+    <%- include('../partials/footer.ejs')%>
+  </body>
 </html>
