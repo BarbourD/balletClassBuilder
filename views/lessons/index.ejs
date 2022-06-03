@@ -5,16 +5,9 @@
   <body>
     <%- include('../partials/header.ejs')%>
     <div>
-      <button
-        class="newB"
-        onClick='location=href="/lessons/new"'
-        type="button"
-      ></button>
-      <button
-        class="backB"
-        onClick="location=href='../'"
-        type="button"
-      ></button>
+      <button class="newB" onClick='location=href="/lessons/new"' type="button"> 
+      </button>
+      <button class="backB" onClick="location=href='../'" type="button"> </button>
     </div>
     <h2>Combinations</h2>
 
@@ -29,6 +22,6 @@
              <%= //lessons[i].discription %><br /> -->
       <% } %>
     </div>
-    <%- include('../partials/footer.ejs')%>
+  
   </body>
 </html>

@@ -30,8 +30,10 @@
       <button class="backB" onClick="location=href='./'" type="button"></button>
     </div>
     <form action="/lessons/<%=lesson._id%>?_method=DELETE" method="POST">
-      <input class="dButton" type="submit" value=" " />
+      <div id="deleteShow"> 
+        <input class="dButton" type="submit" value=" " />
+      </div>
     </form>
-    <%- include('../partials/footer.ejs')%>
   </body>
+
 </html>
